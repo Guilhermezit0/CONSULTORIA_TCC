@@ -189,6 +189,17 @@ html {
 /* ======================================= */
 /* 5. CARDS DE SERVIÇOS           */
 /* ======================================= */
+.introducao-pacotes {
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+.introducao-pacotes h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
 .cartoes-servicos {
     padding-bottom: 50px;
 }
@@ -293,6 +304,117 @@ html {
 }
 
 .btn-ver-todos:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ======================================= */
+/* 5. CARDS DE PACOTES.           */
+/* ======================================= */
+.cartoes-pacotes {
+    padding-bottom: 50px;
+}
+
+.grade-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; /* Aumentado o gap */
+}
+
+.cartao-pacotes {
+    text-align: center;
+    background: white;
+    border-radius: 10px; /* Borda arredondada */
+    overflow: hidden;
+    padding-bottom: 20px;
+    
+    /* Efeito de elevação moderno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    /* Usando Flexbox para alinhar o conteúdo e garantir que o botão fique na parte inferior */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartao-pacotes:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cartao-pacotes h3 {
+    color: var(--primary-color);
+    margin: 15px 0 10px;
+}
+
+.cartao-pacotes p {
+    font-size: 0.95em;
+    color: #527dce;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    /* Ajustando o layout do texto para uniformidade usando Flex */
+    flex-grow: 1; 
+}
+
+
+/* Estilos para as imagens dos cards (mantido via background) */
+.cartao-servico div[class^="imagem-cartao-"] {
+    height: 180px; /* Levemente reduzido para otimização */
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagem-card-1 {
+    background-image: url(#); 
+}
+
+.imagem-card-2 {
+    background-image: url(#); 
+}
+
+.imagem-card-3 {
+    background-image: url(#); 
+}
+
+/* Botões de Detalhes dos Cards */
+.btn-detalhes {
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 20px; /* Botão mais arredondado */
+    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto; /* Garante que o botão fique no final do card flexível */
+}
+
+.btn-detalhes:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Botão de Ver Todos os Serviços */
+.ver-todos-pacotes {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-ver-todos-pack {
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 12px 35px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.btn-ver-todos-pack:hover {
     background-color: var(--primary-color);
     color: white;
 }
