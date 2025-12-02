@@ -218,7 +218,7 @@ html {
     padding-bottom: 20px;
     
     /* Efeito de elevação moderno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.349); 
     transition: transform 0.3s, box-shadow 0.3s;
 
     /* Usando Flexbox para alinhar o conteúdo e garantir que o botão fique na parte inferior */
@@ -256,15 +256,15 @@ html {
 }
 
 .imagem-cartao-1 {
-    background-image: url(/img/site.jpg); 
+    background-color: #0f1f62; 
 }
 
 .imagem-cartao-2 {
-    background-image: url(/img/redes.jfif); 
+    background-color: #0f1f62; 
 }
 
 .imagem-cartao-3 {
-    background-image: url(/img/SEO.webp); 
+    background-color: #0f1f62; 
 }
 
 /* Botões de Detalhes dos Cards */
@@ -329,7 +329,7 @@ html {
     padding-bottom: 20px;
     
     /* Efeito de elevação moderno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.363); 
     transition: transform 0.3s, box-shadow 0.3s;
 
     /* Usando Flexbox para alinhar o conteúdo e garantir que o botão fique na parte inferior */
